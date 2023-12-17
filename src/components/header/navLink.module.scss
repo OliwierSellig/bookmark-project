@@ -1,0 +1,10 @@
+.link {
+  color: var(--color-blue-shade-1);
+  text-transform: uppercase;
+  transition: all 0.2s;
+
+  &:hover,
+  &:focus {
+    color: var(--color-red);
+  }
+}
