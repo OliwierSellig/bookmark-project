@@ -1,0 +1,46 @@
+// --- Variables ---
+
+:root {
+  --color-blue-tint-1: hsl(231, 69%, 60%);
+  --color-blue-shade-1: hsl(229, 31%, 21%);
+  --color-gray-1: hsl(229, 8%, 60%);
+  --color-red: hsl(0, 94%, 66%);
+}
+
+// --- Minimalistic CSS Reset (No need for bigger one in such a small project) ---
+
+html {
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
