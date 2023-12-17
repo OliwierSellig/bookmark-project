@@ -1,13 +1,13 @@
-import Logo from "../global/Logo";
-import LinkNav from "./LinkNav";
+import { LogoBookmark } from "@/svgs";
+import Navigation from "./Navigation";
 import styles from "./header.module.scss";
 
 function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.container}>
-        <Logo />
-        <LinkNav />
+        <LogoBookmark />
+        <Navigation />
       </nav>
     </header>
   );

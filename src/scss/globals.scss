@@ -3,8 +3,11 @@
 :root {
   --color-blue-tint-1: #5368df;
   --color-blue-shade-1: #252b46;
-  --color-gray-1: #9194a1;
+  --color-gray-tint-1: #9194a1;
+  --color-gray-tint-2: #f4f4f6;
+  --color-gray-shade-1: #2b2c30;
   --color-red: #fa5757;
+  --color-white: #ffffff;
 }
 
 // --- Minimalistic CSS Reset (No need for bigger one in such a small project) ---
@@ -33,6 +36,7 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  color: var(--color-gray-tint-1);
 }
 
 ol,
