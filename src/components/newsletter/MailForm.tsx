@@ -21,8 +21,8 @@ function MailForm() {
         Stay up-to-date with what we&apos;re doing
       </label>
       <div className={styles.row}>
-        <div className={styles.box}>
-          <div className={styles.container}>
+        <div className={styles.container}>
+          <div className={styles.box}>
             <input
               value={query}
               onChange={(e) => {
@@ -38,12 +38,11 @@ function MailForm() {
               className={`${styles.icon} ${error ? styles.icon__active : ""}`}
             />
           </div>
-          <div
-            className={`${styles.error} ${error ? styles.error__active : ""}`}
-          >
-            <p>Whoops, make sure it&apos; an email</p>
-          </div>
+          <p className={`${styles.error} ${error ? styles.error__active : ""}`}>
+            Whoops, make sure it&apos; an email
+          </p>
         </div>
+
         <FilledButton handleClick={(e: any) => submitEmail(e)} theme="red">
           Contact us
         </FilledButton>

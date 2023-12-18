@@ -5,10 +5,10 @@ import Link from "next/link";
 function FooterSocials() {
   return (
     <nav className={styles.container}>
-      <Link href="/" className={styles.link}>
+      <Link aria-label="Check your facebook" href="/" className={styles.link}>
         <IconFacebook />
       </Link>
-      <Link href="/" className={styles.link}>
+      <Link aria-label="Check your twitter" href="/" className={styles.link}>
         <IconTwitter />
       </Link>
     </nav>
