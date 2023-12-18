@@ -1,10 +1,10 @@
 .container {
   position: relative;
-}
 
-.image {
-  position: relative;
-  z-index: 30;
+  & svg {
+    position: relative;
+    z-index: 30;
+  }
 }
 
 .background {

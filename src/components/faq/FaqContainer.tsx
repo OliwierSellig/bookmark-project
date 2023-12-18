@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./faqContainer.module.scss";
 import { questionList } from "@/app/utils/utilityData";
 import FaqBox from "./FaqBox";
+import styles from "./faqContainer.module.scss";
 
 function FaqContainer() {
   const [active, setActive] = useState<number | null>(null);

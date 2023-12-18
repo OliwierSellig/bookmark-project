@@ -5,9 +5,9 @@ import styles from "./hero.module.scss";
 
 function Hero() {
   return (
-    <section>
+    <section className={styles.container}>
       <Container>
-        <div className={styles.container}>
+        <div className={styles.content}>
           <HeroContent />
           <HeroImage />
         </div>

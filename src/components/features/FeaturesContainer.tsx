@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import FeaturesNav from "./FeaturesNav";
 import FeaturesBlock from "./FeaturesBlock";
 import {
@@ -11,8 +11,6 @@ import {
 
 function FeaturesContainer() {
   const [active, setActive] = useState<0 | 1 | 2>(0);
-
-  useEffect(() => {}, []);
 
   return (
     <div>

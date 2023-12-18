@@ -1,13 +1,13 @@
 import FilledButton from "../global/FilledButton";
-import NavLink from "./NavLink";
+import NavigationLink from "../global/NavigationLink";
 import styles from "./navigation.module.scss";
 
 function Navigation() {
   return (
     <nav className={styles.nav}>
-      <NavLink to="/">Features</NavLink>
-      <NavLink to="/">Pricing</NavLink>
-      <NavLink to="/">Contact</NavLink>
+      <NavigationLink to="/">Featrues</NavigationLink>
+      <NavigationLink to="/">Pricing</NavigationLink>
+      <NavigationLink to="/">Contact</NavigationLink>
       <FilledButton theme="red">LOGIN</FilledButton>
     </nav>
   );

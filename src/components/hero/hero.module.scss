@@ -1,8 +1,10 @@
 .container {
-  padding-top: 186px;
+  padding: 186px 0 62px;
+}
+
+.content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 62px;
   align-items: center;
-  padding-bottom: 62px;
+  column-gap: 62px;
 }
