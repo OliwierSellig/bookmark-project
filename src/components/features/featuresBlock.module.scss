@@ -1,0 +1,48 @@
+@import "../../scss/animations.scss";
+
+.container {
+  display: grid;
+  grid-template-columns: 5.5fr 4.5fr;
+  column-gap: 124px;
+  align-items: start;
+}
+
+.box {
+  position: relative;
+  justify-self: end;
+  display: flex;
+  justify-content: end;
+  height: 430px;
+  width: 100%;
+}
+
+.image {
+  position: relative;
+  z-index: 30;
+  animation: fadeInOpacity 0.8s;
+}
+
+.background {
+  position: absolute;
+  background-color: var(--color-blue-tint-1);
+  z-index: 10;
+  height: 342px;
+  bottom: 0%;
+  right: 10%;
+  width: 100vw;
+  border-bottom-right-radius: 12000px;
+  border-top-right-radius: 12000px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  animation: fadeFromRight 0.8s;
+  justify-self: start;
+  padding-top: 52px;
+}
+
+.textCol {
+  margin-bottom: 32px;
+}

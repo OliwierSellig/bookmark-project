@@ -53,6 +53,18 @@ a {
   text-decoration: none;
 }
 
+button {
+  background: none;
+  border: none;
+  font-size: inherit;
+  font-family: inherit;
+  user-select: none;
+}
+
 *:focus {
   outline: none;
+}
+
+canvas {
+  display: none;
 }

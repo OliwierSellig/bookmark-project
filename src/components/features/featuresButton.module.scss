@@ -1,0 +1,17 @@
+.button {
+  color: var(--color-gray-tint-1);
+  padding: 0 12px 28px;
+  border-bottom: 1px solid #ddd;
+  transition: all 0.3s;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--color-red);
+  }
+}
+
+.active {
+  color: var(--color-blue-shade-1);
+}

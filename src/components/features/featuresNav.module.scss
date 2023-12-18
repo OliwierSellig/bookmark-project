@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 82px;
+}
+
+.activeLine {
+  transition: all 0.3s;
+  height: 3px;
+  background-color: var(--color-red);
+  border-radius: 13px;
+  width: 33.33%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  &__0 {
+    transform: translateX(0);
+  }
+
+  &__1 {
+    transform: translateX(100%);
+  }
+
+  &__2 {
+    transform: translateX(200%);
+  }
+}
