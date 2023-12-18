@@ -1,6 +1,13 @@
 .heading {
   font-size: 32px;
   font-weight: 500;
-  color: var(--color-blue-shade-1);
   margin-bottom: 24px;
+
+  &__dark {
+    color: var(--color-blue-shade-1);
+  }
+
+  &__light {
+    color: var(--color-white);
+  }
 }

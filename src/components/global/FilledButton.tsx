@@ -28,7 +28,7 @@ function FilledButton({
     );
   return (
     <button
-      onClick={() => handleClick?.()}
+      onClick={(e) => handleClick?.(e)}
       className={`${styles.button} ${styles[`button__${theme}`]}`}
     >
       {children}

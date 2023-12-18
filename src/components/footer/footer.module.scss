@@ -1,0 +1,10 @@
+.container {
+  background-color: var(--color-blue-shade-1);
+  padding: 24px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

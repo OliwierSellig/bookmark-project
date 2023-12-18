@@ -1,0 +1,19 @@
+.link {
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+
+  &:hover,
+  &:focus {
+    color: var(--color-red);
+  }
+
+  &__light {
+    color: var(--color-gray-tint-2);
+  }
+
+  &__dark {
+    color: var(--color-blue-shade-1);
+  }
+}
