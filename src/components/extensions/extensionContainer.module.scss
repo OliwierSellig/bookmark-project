@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 36px;
+  align-items: center;
+  justify-content: center;
+
+  & > li:first-child {
+    transform: translateY(-10%);
+  }
+
+  & > li:last-child {
+    transform: translateY(10%);
+  }
+}
