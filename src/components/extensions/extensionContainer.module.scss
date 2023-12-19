@@ -1,16 +1,36 @@
 .list {
-  display: flex;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 36px;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  gap: 36px;
   align-items: center;
   justify-content: center;
   padding-top: 48px;
 
   & > li:first-child {
     transform: translateY(-10%);
+
+    @media only screen and (max-width: 1060px) {
+      transform: none;
+    }
   }
 
   & > li:last-child {
     transform: translateY(10%);
+
+    @media only screen and (max-width: 1060px) {
+      transform: none;
+      grid-column: 1/-1;
+      width: min-content;
+      justify-self: center;
+    }
+  }
+
+  @media only screen and (max-width: 1060px) {
+    padding-top: 0;
+    grid-template-columns: min-content min-content;
+  }
+
+  @media only screen and (max-width: 640px) {
+    grid-template-columns: min-content;
   }
 }

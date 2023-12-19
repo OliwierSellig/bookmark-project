@@ -39,7 +39,9 @@ function MailForm() {
             />
           </div>
           <p className={`${styles.error} ${error ? styles.error__active : ""}`}>
-            Whoops, make sure it&apos; an email
+            <span className={styles.innerContent}>
+              Whoops, make sure it&apos; an email
+            </span>
           </p>
         </div>
 

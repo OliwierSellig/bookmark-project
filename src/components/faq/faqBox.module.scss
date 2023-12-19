@@ -4,7 +4,7 @@
 
 .header {
   display: flex;
-  padding: 22px 16px;
+  padding: 22px 22px 22px 0px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
@@ -16,6 +16,15 @@
     & .question {
       color: var(--color-red);
     }
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 14px;
+    padding: 22px 8px 22px 0px;
+  }
+
+  @media only screen and (max-width: 360px) {
+    font-size: 12px;
   }
 }
 
@@ -48,6 +57,14 @@
 
   & > p {
     overflow: hidden;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 360px) {
+      font-size: 14px;
+    }
   }
 }
 

@@ -8,7 +8,9 @@ function Navigation() {
       <NavigationLink to="/">Featrues</NavigationLink>
       <NavigationLink to="/">Pricing</NavigationLink>
       <NavigationLink to="/">Contact</NavigationLink>
-      <FilledButton theme="red">LOGIN</FilledButton>
+      <FilledButton size="wide" theme="red">
+        LOGIN
+      </FilledButton>
     </nav>
   );
 }

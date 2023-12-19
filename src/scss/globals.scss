@@ -10,16 +10,17 @@
   --color-white: #ffffff;
 }
 
-// --- Minimalistic CSS Reset (No need for bigger one in such a small project) ---
+// --- Minimalistic CSS Reset (No need for bigger one in such small project) ---
 
 html {
   box-sizing: border-box;
   font-size: 18px;
+  overflow-x: clip;
 }
 
 body {
   background-color: var(--color-white);
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 *,

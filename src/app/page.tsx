@@ -9,7 +9,7 @@ import Newsletter from "@/components/newsletter/Newsletter";
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <main>
         <Hero />
         <Features />

@@ -5,6 +5,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin-bottom: 82px;
+
+  @media only screen and (max-width: 720px) {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 42px;
+
+    & button:first-child {
+      padding-top: 24px;
+      border-top: 1px solid #ddd;
+    }
+  }
 }
 
 .activeLine {
@@ -17,15 +28,35 @@
   bottom: 0;
   left: 0;
 
+  @media only screen and (max-width: 720px) {
+    width: 50%;
+    transform: translateX(50%);
+  }
+
   &__0 {
     transform: translateX(0);
+
+    @media only screen and (max-width: 720px) {
+      transform: translate(50%, 100%);
+      bottom: 67.5%;
+    }
   }
 
   &__1 {
     transform: translateX(100%);
+
+    @media only screen and (max-width: 720px) {
+      transform: translateX(50%);
+      bottom: 33.5%;
+    }
   }
 
   &__2 {
     transform: translateX(200%);
+
+    @media only screen and (max-width: 720px) {
+      transform: translateX(50%);
+      bottom: 0%;
+    }
   }
 }

@@ -4,4 +4,9 @@
   letter-spacing: 4.6px;
   color: var(--color-white);
   margin-bottom: 36px;
+
+  @media only screen and (max-width: 480px) {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
 }

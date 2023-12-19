@@ -9,6 +9,7 @@ interface FilledButtonProps {
   children: ReactNode;
   handleClick?: Function;
   theme: "blue" | "gray" | "red";
+  size?: "tall" | "wide";
 }
 
 function FilledButton({
@@ -16,21 +17,20 @@ function FilledButton({
   children,
   handleClick,
   theme,
+  size = "tall",
 }: FilledButtonProps) {
+  const buttonClass = `${styles.button} ${styles[`button__${theme}`]} ${
+    styles[`button__${size}`]
+  }`;
+
   if (destination)
     return (
-      <Link
-        className={`${styles.button} ${styles[`button__${theme}`]}`}
-        href={destination}
-      >
+      <Link className={buttonClass} href={destination}>
         {children}
       </Link>
     );
   return (
-    <button
-      onClick={(e) => handleClick?.(e)}
-      className={`${styles.button} ${styles[`button__${theme}`]}`}
-    >
+    <button onClick={(e) => handleClick?.(e)} className={buttonClass}>
       {children}
     </button>
   );

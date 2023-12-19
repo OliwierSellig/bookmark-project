@@ -5,6 +5,10 @@
   grid-template-columns: 5.5fr 4.5fr;
   column-gap: 124px;
   align-items: start;
+
+  @media only screen and (max-width: 1060px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .box {
@@ -14,12 +18,47 @@
   justify-content: end;
   height: 430px;
   width: 100%;
-}
 
-.image {
-  position: relative;
-  z-index: 30;
-  animation: fadeInOpacity 0.8s;
+  @media only screen and (max-width: 1060px) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 480px) {
+    height: 340px;
+  }
+
+  & svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    animation: fadeInOpacity 0.8s;
+    transition: all 0.2s;
+
+    @media only screen and (max-width: 1200px) {
+      left: 50%;
+      transform: translateX(-50%);
+      animation: fadeFromLeftFeatureImage 1s;
+    }
+
+    @media only screen and (max-width: 720px) {
+      transform: translateX(-50%) scale(0.9);
+    }
+
+    @media only screen and (max-width: 540px) {
+      transform: translateX(-50%) scale(0.8);
+    }
+
+    @media only screen and (max-width: 480px) {
+      transform: translate(-50%, -10%) scale(0.7);
+    }
+    @media only screen and (max-width: 400px) {
+      transform: translate(-50%, -10%) scale(0.6);
+    }
+    @media only screen and (max-width: 340px) {
+      transform: translate(-50%, -10%) scale(0.55);
+    }
+  }
 }
 
 .background {
@@ -29,9 +68,42 @@
   height: 342px;
   bottom: 0%;
   right: 10%;
-  width: 100vw;
+  width: 500vw;
   border-bottom-right-radius: 12000px;
   border-top-right-radius: 12000px;
+  transition: all 0.2s;
+
+  @media only screen and (max-width: 1060px) {
+    right: 35%;
+    height: 322px;
+    bottom: 6%;
+  }
+
+  @media only screen and (max-width: 760px) {
+    right: 20%;
+  }
+
+  @media only screen and (max-width: 720px) {
+    height: 302px;
+  }
+
+  @media only screen and (max-width: 540px) {
+    right: 10%;
+    bottom: 14%;
+    height: 262px;
+  }
+
+  @media only screen and (max-width: 480px) {
+    right: 10%;
+    bottom: 10%;
+    height: 222px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    right: 10%;
+    bottom: 16%;
+    height: 202px;
+  }
 }
 
 .content {
@@ -41,6 +113,17 @@
   animation: fadeFromRight 0.8s;
   justify-self: start;
   padding-top: 52px;
+
+  @media only screen and (max-width: 1060px) {
+    align-items: center;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 720px) {
+    padding-top: 0;
+  }
 }
 
 .textCol {

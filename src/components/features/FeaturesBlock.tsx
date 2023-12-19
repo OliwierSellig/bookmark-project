@@ -20,7 +20,7 @@ function FeaturesBlock({
   return (
     <div className={styles.container}>
       <div className={styles.box}>
-        <div className={styles.image}>{image}</div>
+        {image}
         <div className={styles.background} />
       </div>
       <div className={styles.content}>

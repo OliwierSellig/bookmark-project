@@ -1,9 +1,41 @@
 .container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 1200px) {
+    grid-row: 1/2;
+  }
+
+  @media only screen and (max-width: 720px) {
+    height: 380px;
+  }
+
+  @media only screen and (max-width: 400px) {
+    height: 320px;
+  }
 
   & svg {
     position: relative;
     z-index: 30;
+
+    @media only screen and (max-width: 720px) {
+      position: absolute;
+      transform: scale(0.8);
+    }
+
+    @media only screen and (max-width: 540px) {
+      transform: scale(0.7);
+    }
+
+    @media only screen and (max-width: 480px) {
+      transform: scale(0.6);
+    }
+
+    @media only screen and (max-width: 380px) {
+      transform: scale(0.5);
+    }
   }
 }
 
@@ -17,4 +49,21 @@
   width: 100vw;
   border-bottom-left-radius: 12000px;
   border-top-left-radius: 12000px;
+
+  @media only screen and (max-width: 720px) {
+    transform: scale(0.8);
+    left: 0%;
+    width: 200vw;
+  }
+
+  @media only screen and (max-width: 480px) {
+    transform: scale(0.7);
+    left: -20%;
+  }
+
+  @media only screen and (max-width: 400px) {
+    bottom: -15%;
+    transform: scale(0.6);
+    left: -25%;
+  }
 }
