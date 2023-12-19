@@ -32,13 +32,13 @@
     top: 0;
     right: 0;
     z-index: 30;
-    animation: fadeInOpacity 0.8s;
     transition: all 0.2s;
+    animation: fadeInOpacity 0.8s;
 
     @media only screen and (max-width: 1200px) {
       left: 50%;
       transform: translateX(-50%);
-      animation: fadeFromLeftFeatureImage 1s;
+      animation: fadeInBasic 0.8s;
     }
 
     @media only screen and (max-width: 720px) {
@@ -68,10 +68,11 @@
   height: 342px;
   bottom: 0%;
   right: 10%;
-  width: 500vw;
+  width: 100vw;
   border-bottom-right-radius: 12000px;
   border-top-right-radius: 12000px;
   transition: all 0.2s;
+  animation: scaleHorizontalLeft 0.8s;
 
   @media only screen and (max-width: 1060px) {
     right: 35%;

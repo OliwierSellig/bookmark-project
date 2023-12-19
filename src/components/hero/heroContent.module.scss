@@ -1,8 +1,11 @@
+@import "../../scss/animations.scss";
+
 .container {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
   gap: 32px;
+  animation: fadeFromLeft 0.8s;
 
   @media only screen and (max-width: 1200px) {
     max-width: 800px;

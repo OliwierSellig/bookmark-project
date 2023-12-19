@@ -1,6 +1,9 @@
+@import "../../scss/animations.scss";
+
 .header {
   margin: 0 auto;
   max-width: 540px;
   text-align: center;
   margin-bottom: 52px;
+  animation: fadeInOpacity 1s;
 }

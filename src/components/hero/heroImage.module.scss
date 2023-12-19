@@ -1,3 +1,5 @@
+@import "../../scss/animations.scss";
+
 .container {
   position: relative;
   display: flex;
@@ -19,10 +21,12 @@
   & svg {
     position: relative;
     z-index: 30;
+    animation: fadeInOpacity 0.8s;
 
     @media only screen and (max-width: 720px) {
       position: absolute;
       transform: scale(0.8);
+      animation: fadeInBasic 0.8s;
     }
 
     @media only screen and (max-width: 540px) {
@@ -49,21 +53,30 @@
   width: 100vw;
   border-bottom-left-radius: 12000px;
   border-top-left-radius: 12000px;
+  animation: scaleHorizontalRight 1s;
 
   @media only screen and (max-width: 720px) {
-    transform: scale(0.8);
-    left: 0%;
+    height: 282px;
+    left: 20%;
     width: 200vw;
+    bottom: 2%;
+  }
+
+  @media only screen and (max-width: 540px) {
+    height: 262px;
+    left: 20%;
+    bottom: 10%;
   }
 
   @media only screen and (max-width: 480px) {
-    transform: scale(0.7);
-    left: -20%;
+    height: 222px;
+    left: 15%;
+    bottom: 14%;
   }
 
-  @media only screen and (max-width: 400px) {
-    bottom: -15%;
-    transform: scale(0.6);
-    left: -25%;
+  @media only screen and (max-width: 380px) {
+    height: 182px;
+    left: 15%;
+    bottom: 12%;
   }
 }
