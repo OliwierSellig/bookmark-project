@@ -1,15 +1,19 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { LogoBookmark } from "@/svgs";
 import Navigation from "./Navigation";
-import { useEffect, useState } from "react";
-import styles from "./header.module.scss";
 import MobileNav from "./MobileNav";
+import ModalWindow from "./ModalWindow";
+import styles from "./header.module.scss";
 
 function Header() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
+  const [isSticky, setIsSticky] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [prevScrollPos, setPrevScrollPos] = useState<number>(0);
+
+  // Most of the sites logic (Could've make a context out of it, but it's still to small chunk of a code in my opinion)!
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,9 +36,10 @@ function Header() {
   }, [prevScrollPos]);
 
   useEffect(() => {
-    if (isNavOpen) document.documentElement.classList.add("locked");
+    if (isNavOpen && isModalOpen)
+      document.documentElement.classList.add("locked");
     else document.documentElement.classList.remove("locked");
-  }, [isNavOpen]);
+  }, [isNavOpen, isModalOpen]);
 
   useEffect(() => {
     function checkNavOpen() {
@@ -45,6 +50,14 @@ function Header() {
 
     window.addEventListener("resize", checkNavOpen);
   }, [isNavOpen]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsModalOpen(true);
+    }, 30000);
+  }, []);
+
+  // ------
 
   return (
     <header
@@ -57,7 +70,12 @@ function Header() {
           isNavOpen ? styles.container__open : ""
         } `}
       >
-        <LogoBookmark />
+        <button
+          className={styles.modalBtn}
+          onClick={() => setIsModalOpen(true)}
+        >
+          <LogoBookmark />
+        </button>
         <Navigation
           openNav={() => setIsNavOpen(true)}
           closeNav={() => setIsNavOpen(false)}
@@ -65,6 +83,7 @@ function Header() {
         />
       </nav>
       {isNavOpen && <MobileNav />}
+      {isModalOpen && <ModalWindow close={() => setIsModalOpen(false)} />}
     </header>
   );
 }

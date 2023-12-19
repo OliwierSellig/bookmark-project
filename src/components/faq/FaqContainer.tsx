@@ -1,9 +1,33 @@
 "use client";
 
 import { useState } from "react";
-import { questionList } from "@/utils/utilityData";
 import FaqBox from "./FaqBox";
 import styles from "./faqContainer.module.scss";
+
+type questionItemProp = { question: string; answer: string };
+
+const questionList: questionItemProp[] = [
+  {
+    question: "What is Bookmark?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquetconvallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
+  },
+  {
+    question: "How can I request a new browser?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquetconvallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
+  },
+  {
+    question: "Is there a mobile app?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquetconvallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
+  },
+  {
+    question: "What about the Chromium browsers?",
+    answer:
+      "Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquetconvallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.",
+  },
+];
 
 function FaqContainer() {
   const [active, setActive] = useState<number | null>(null);

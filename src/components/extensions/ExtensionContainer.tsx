@@ -1,6 +1,6 @@
+import { LogoChrome, LogoFirefox, LogoOpera } from "@/svgs";
 import ExtensionCard from "./ExtensionCard";
 import styles from "./extensionContainer.module.scss";
-import { LogoChrome, LogoFirefox, LogoOpera } from "@/svgs";
 
 function ExtensionContainer() {
   return (

@@ -4,10 +4,10 @@
 
 .header {
   display: flex;
-  padding: 22px 22px 22px 0px;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 22px 22px 22px 0px;
   font-size: 16px;
   cursor: pointer;
 
@@ -19,8 +19,8 @@
   }
 
   @media only screen and (max-width: 480px) {
-    font-size: 14px;
     padding: 22px 8px 22px 0px;
+    font-size: 14px;
   }
 
   @media only screen and (max-width: 360px) {
@@ -48,12 +48,12 @@
 }
 
 .answer {
-  line-height: 1.7;
-  transition: all 0.3s;
-  max-height: 1000px;
   display: grid;
   grid-template-rows: 0fr;
+  max-height: 1000px;
   padding: 0 16px;
+  line-height: 1.7;
+  transition: all 0.3s;
 
   & > p {
     overflow: hidden;

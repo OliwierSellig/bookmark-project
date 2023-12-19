@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { ReactNode } from "react";
+import Link from "next/link";
 import styles from "./filledButton.module.scss";
 
 interface FilledButtonProps {

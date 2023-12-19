@@ -2,7 +2,6 @@ import { IconClose, IconHamburger } from "@/svgs";
 import FilledButton from "../global/FilledButton";
 import NavigationLink from "../global/NavigationLink";
 import styles from "./navigation.module.scss";
-import { Dispatch, SetStateAction } from "react";
 
 interface NavigationProps {
   openNav: () => void;

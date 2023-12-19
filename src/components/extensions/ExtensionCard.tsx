@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
-import FilledButton from "../global/FilledButton";
 import { BgDots } from "@/svgs";
+import FilledButton from "../global/FilledButton";
 import styles from "./extensionCard.module.scss";
 
 interface ExtensionCardProps {

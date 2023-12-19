@@ -1,9 +1,8 @@
-import { questionItemProp } from "@/utils/utilityData";
-import styles from "./faqBox.module.scss";
 import { IconArrow } from "@/svgs";
+import styles from "./faqBox.module.scss";
 
 interface FaqBoxProps {
-  q: questionItemProp;
+  q: { question: string; answer: string };
   isActive: boolean;
   setActive: () => void;
   unSetActive: () => void;

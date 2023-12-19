@@ -1,6 +1,6 @@
+import { IconFacebook, IconTwitter } from "@/svgs";
 import Link from "next/link";
 import styles from "./mobileNav.module.scss";
-import { IconFacebook, IconTwitter } from "@/svgs";
 
 function MobileNav() {
   return (

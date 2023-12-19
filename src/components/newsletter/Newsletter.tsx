@@ -1,5 +1,4 @@
 import Container from "../global/Container";
-import SectionHeading from "../global/SectionHeading";
 import MailForm from "./MailForm";
 import NumbersCounter from "./NumbersCounter";
 import styles from "./newsletter.module.scss";

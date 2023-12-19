@@ -1,6 +1,6 @@
 import { IconFacebook, IconTwitter } from "@/svgs";
-import styles from "./footerSocials.module.scss";
 import Link from "next/link";
+import styles from "./footerSocials.module.scss";
 
 function FooterSocials() {
   return (

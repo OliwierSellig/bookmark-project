@@ -1,8 +1,8 @@
-import { ComponentType, ReactElement, ReactNode } from "react";
-import styles from "./featuresBlock.module.scss";
+import { ReactElement, ReactNode } from "react";
 import SectionHeading from "../global/SectionHeading";
 import SectionParagraph from "../global/SectionParagraph";
 import FilledButton from "../global/FilledButton";
+import styles from "./featuresBlock.module.scss";
 
 interface FeaturesBlockProps {
   image: ReactElement;

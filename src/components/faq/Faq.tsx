@@ -2,7 +2,6 @@ import Container from "../global/Container";
 import FilledButton from "../global/FilledButton";
 import SectionHeader from "../global/SectionHeader";
 import FaqContainer from "./FaqContainer";
-
 import styles from "./faq.module.scss";
 
 function Faq() {

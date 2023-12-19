@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { IconError } from "@/svgs";
 import FilledButton from "../global/FilledButton";
 import styles from "./mailForm.module.scss";
-import { IconError } from "@/svgs";
 
 function MailForm() {
   const [query, setQuery] = useState<string>("");

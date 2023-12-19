@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import styles from "./navigationLink.module.scss";
 import Link from "next/link";
+import styles from "./navigationLink.module.scss";
 
 interface NavigationLinkProps {
   to: string;

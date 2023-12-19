@@ -1,7 +1,6 @@
 import { LogoBookmark } from "@/svgs";
-import styles from "./footerNavigation.module.scss";
-import Link from "next/link";
 import NavigationLink from "../global/NavigationLink";
+import styles from "./footerNavigation.module.scss";
 
 function FooterNavigation() {
   return (

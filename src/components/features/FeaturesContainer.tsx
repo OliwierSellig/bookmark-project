@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import FeaturesNav from "./FeaturesNav";
-import FeaturesBlock from "./FeaturesBlock";
 import {
   FeaturesTabIlustration1,
   FeaturesTabIlustration2,
   FeaturesTabIlustration3,
 } from "@/svgs";
+import FeaturesNav from "./FeaturesNav";
+import FeaturesBlock from "./FeaturesBlock";
 
 function FeaturesContainer() {
   const [active, setActive] = useState<0 | 1 | 2>(0);

@@ -1,7 +1,7 @@
 .nav {
   display: flex;
-  gap: 42px;
   align-items: center;
+  gap: 42px;
 
   @media only screen and (max-width: 720px) {
     display: none;

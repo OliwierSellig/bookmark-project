@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import SectionHeading from "./SectionHeading";
-import styles from "./sectionHeader.module.scss";
 import SectionParagraph from "./SectionParagraph";
+import styles from "./sectionHeader.module.scss";
 
 interface SectionHeaderProps {
   children: ReactNode;

@@ -2,21 +2,21 @@
 
 .nav {
   display: flex;
+  flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
-  padding: 16px 24px 42px;
-  flex-direction: column;
   height: 100%;
+  padding: 16px 24px 42px;
   overflow: hidden;
 }
 
 .links {
   display: flex;
-  text-align: center;
   flex-direction: column;
+  text-align: center;
+  width: 100%;
   text-transform: uppercase;
   letter-spacing: 3.2px;
-  width: 100%;
   animation: fadeFromTop 0.8s;
 
   &__link {
@@ -34,12 +34,12 @@
   }
 
   &__login {
+    width: 100%;
     margin-top: 24px;
-    font-weight: 500;
+    padding: 12px 12px;
     border: 2px solid var(--color-white);
     border-radius: 7px;
-    padding: 12px 12px;
-    width: 100%;
+    font-weight: 500;
     color: var(--color-white);
     transition: all 0.15s;
     user-select: none;
@@ -61,6 +61,7 @@
   align-items: center;
   justify-content: center;
   gap: 36px;
+
   &__link {
     &:hover,
     &:focus {
