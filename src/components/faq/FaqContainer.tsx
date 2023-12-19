@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { questionList } from "@/app/utils/utilityData";
+import { questionList } from "@/utils/utilityData";
 import FaqBox from "./FaqBox";
 import styles from "./faqContainer.module.scss";
 

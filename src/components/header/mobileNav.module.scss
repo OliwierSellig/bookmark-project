@@ -1,0 +1,80 @@
+@import "../../scss/animations.scss";
+
+.nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 16px 24px 42px;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.links {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 3.2px;
+  width: 100%;
+  animation: fadeFromTop 0.8s;
+
+  &__link {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(#777, 0.5);
+    color: var(--color-white);
+    transition: all 0.15s;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      color: var(--color-red);
+    }
+  }
+
+  &__login {
+    margin-top: 24px;
+    font-weight: 500;
+    border: 2px solid var(--color-white);
+    border-radius: 7px;
+    padding: 12px 12px;
+    width: 100%;
+    color: var(--color-white);
+    transition: all 0.15s;
+    user-select: none;
+
+    &:hover,
+    &:focus {
+      background-color: var(--color-white);
+      color: var(--color-gray-shade-1);
+    }
+  }
+
+  & a:first-child {
+    border-top: 1px solid rgba(#777, 0.5);
+  }
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  &__link {
+    &:hover,
+    &:focus {
+      svg path {
+        fill: var(--color-red);
+      }
+    }
+
+    &:first-child {
+      animation: fadeFromLeft 1s;
+    }
+
+    &:last-child {
+      animation: fadeFromRight 1s;
+    }
+  }
+}

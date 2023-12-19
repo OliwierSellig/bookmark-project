@@ -2,4 +2,26 @@
   display: flex;
   gap: 42px;
   align-items: center;
+
+  @media only screen and (max-width: 720px) {
+    display: none;
+  }
+}
+
+.mobile {
+  &__open,
+  &__close {
+    display: none;
+
+    @media only screen and (max-width: 720px) {
+      display: block;
+      cursor: pointer;
+
+      &:focus,
+      &:hover > svg > path {
+        transition: all 0.15s;
+        fill: var(--color-red);
+      }
+    }
+  }
 }

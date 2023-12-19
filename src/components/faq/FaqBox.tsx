@@ -1,4 +1,4 @@
-import { questionItemProp } from "@/app/utils/utilityData";
+import { questionItemProp } from "@/utils/utilityData";
 import styles from "./faqBox.module.scss";
 import { IconArrow } from "@/svgs";
 
