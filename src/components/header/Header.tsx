@@ -71,6 +71,7 @@ function Header() {
         } `}
       >
         <button
+          aria-label="Open popup"
           className={styles.modalBtn}
           onClick={() => setIsModalOpen(true)}
         >
